@@ -1,0 +1,36 @@
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 9999;
+  display: none;
+  background: hsl(var(--primary) / 0.2);
+  overflow: hidden;
+}
+
+.page-loader.is-loading {
+  display: block;
+}
+
+.page-loader::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: hsl(var(--primary));
+  animation: page-loader-animation 1.5s cubic-bezier(0.15, 0.45, 0.85, 0.55) infinite;
+}
+
+@keyframes page-loader-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

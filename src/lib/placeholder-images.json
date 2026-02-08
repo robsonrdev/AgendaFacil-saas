@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "client-booking-interface",
+      "description": "Uma prévia da interface de agendamento simples para o cliente.",
+      "imageUrl": "https://images.unsplash.com/photo-1762330471287-be883db470c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29raW5nJTIwaW50ZXJmYWNlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3Njg0MzQyMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "captura de tela da interface de agendamento"
+    }
+  ]
+}
