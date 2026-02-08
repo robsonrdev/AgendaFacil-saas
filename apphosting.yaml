@@ -1,7 +1,19 @@
-# Settings to manage and configure a Firebase App Hosting backend.
-# https://firebase.google.com/docs/app-hosting/configure
-
 runConfig:
-  # Increase this value if you'd like to automatically spin up
-  # more instances in response to increased traffic.
-  maxInstances: 1
+  minInstances: 1
+
+env:
+  # --- VARIÁVEIS PÚBLICAS (Cole seus valores aqui) ---
+  - variable: NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+    value: pk_live_51RDspaFpRYJ4Ld4UV4q9l3ysip6y0lfdjTB9th9zjjspQ1d8fYhObRrcw5RruFaTE1aO6Ohgs9tOuRGhfx6TAkuG00hlX9cJcg
+  - variable: NEXT_PUBLIC_PRICE_ID_PRO
+    value: price_1SyakTFpRYJ4Ld4U0hOFWGVQ
+  - variable: NEXT_PUBLIC_PRICE_ID_BUSINESS
+    value: price_1Syal0FpRYJ4Ld4Up4VqOz9a
+  - variable: NEXT_PUBLIC_URL
+    value: https://agendafacil-prod--agendafacil-rm.us-east4.hosted.app
+
+  # --- SEGREDOS (Já configurados no terminal) ---
+  - variable: STRIPE_SECRET_KEY
+    secret: STRIPE_SECRET_KEY
+  - variable: STRIPE_WEBHOOK_SECRET
+    secret: STRIPE_WEBHOOK_SECRET
